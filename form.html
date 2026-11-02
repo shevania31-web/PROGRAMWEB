@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materi Form</title>
+</head>
+<body>
+    <form action="" method="post"> <!-- post digunakan untuk menurupi password-->
+        <table align="center">
+            <tr> <!-- placeholder buat panduan atau notifikasi pembantu-->
+                <td>Userrname</td>  <!-- td digunakan untuk kolom, dimana kolom itu mamnjang ke kanan atau kekiri -->
+                <td><input type="text" name="txtweb" id="" placeholder="Masukan Username"
+                    pattern="[A-Za-a ]+">       </td>
+            </tr>
+            <tr>
+                <td>Password</td>  <!-- tr digunakan buat baris, dimana  baris itu yg mamanjang kebawah -->
+                <td><input type="password" name="txtpass" id="" placeholder="Minimal 8 Karakter"
+                     pattern="[A-Za-z0-9]+ {6,15}">       </td>></td>
+            </tr>
+            <tr>
+                <td> Umur</td>
+                <td><input type="number" name="txtumur" id="" min="18" max="100" placeholder="Umur"></td>
+            </tr>
+            <tr>
+                <td>Jenis Kelamin</td>
+                <td><input type="radio" name="key" id="" value="P">Pria
+                    <input type="radio" name="key" id="" checked value="W">Wanita</td>
+            </tr> <!-- radio penggunaanya untuk jenis kelamin-->
+            <tr>
+                <td>Alamat</td>
+                <td><textarea name="txtalm" id="" rows="4" cols="30"></textarea></td>
+            </tr> <!-- Text area digunakan untuk baris yang lebih panjang, rows: untuk baris kebawa, cols: untuk kolom karakter dan beberapa karakter-->
+           <tr>
+                <td>Tanggal Lahir</td>
+                <td><input type="date" name="txttgl" id=""></td>
+           </tr>
+           <tr>
+                <td>Jurusan</td>
+                <td><select name="txtjur" id="">
+                    <optgroup label="FTD">
+                        <option value="TI">Teknik Informatika</option>
+                        <option value="SK">Sistem Komputer</option>
+                        <option value="DKV">Desain Komunikasi Visual</option>
+                    </optgroup>
+                    <optgroup label="FEB">
+                        <option value="AK">Akuntansi</option>
+                        <option value="MAN">Manajemen</option>
+                    </optgroup>
+                </select></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit" value="kirim" name="cmd kirim"><input type="reset" value="Batal" name="cmdbatal"></td> <!-- input type submit digunakan untuk tombol kirim -->
+            </tr>
+        </table>
+    </form> <!--inputan dalam bentuk angka  pake type number bisa memuat range-->
+</body>
+</html>

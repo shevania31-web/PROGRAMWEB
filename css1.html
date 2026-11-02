@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <link rel="stylesheet" href="csseksternal.css">  <!-- buat pemanggilan untuk css nanti-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<style>
+    /* ini bagian pada internal */
+    h1,h2,h3 { font-family:'courier new'; text-align: center;} 
+    * {color:blue;}
+    /* elemem * membuat semua elemen sesui dengan contoh colornya */
+     #satu {background-color: salmon; font-size:20pt;} /* ini digunakan untuk id dan pemanggilanya hanya satu kali tidak bolehdiguankan lebih dari satu--> */
+    .dua {background-color: yellow; font-size: 30pt;} /* ini digunakan pada class. pemanggilan pada saat di paragraf yaitu p.dua atau terserah apa saja. dan bisa dipkai 2 class.*/
+    .tiga {font-family: arial;}
+    #empat {font-family: arial;}
+    p b {background-color : green;}
+    /* p b digunakan untuk higlight di tulisan didalam paragraf */
+    ul li i {font-size: 20pt;}
+    /* ul li i untuk yang didalam list yang pada garis miring dibuat fontnya lebih besar bisa disini */
+    p:hover {background-color : pink}
+    /* untuk diparagraf yang ketika di tekan mucul pop up berwarna*/
+    p:first-letter {font-family: monotype corsiva;
+        font-size: 50pt;}
+    /* untuk huruf pertama dalam paragraf mau diperbesar atau bagaimana terserah */
+    p {text-align: center;}
+    h1 b {font-weight: bold;}
+    p {text-indent: 200pt; text-transform: capitalize;
+        word-spacing:10pt;}
+    
+    .Alamat {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    text-decoration: line-through;
+    }
+    /* untuk mengganti font lewat : google.fonts.com */
+    body {
+      background: url(https://images.pexels.com/photos/36516653/pexels-photo-36516653/free-photo-of-pantai-senja-yang-memukau-dengan-awan-yang-dramatis.jpeg?cs=tinysrgb&dpr=1&w=500);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-attachment:fixed;
+    }
+</style>
+<body>
+    <h1 style="font-family: arial black; ">Selamat Datang</h1> <!--ini bagian in line. Prioritas utama dalam font yaitu inline, internal dan ekternal. jadi pada saat pemanggilan in line didahulukan lalu kalau tidak ada pemanggilan internal dan terkahir itu eksternal dari css-->
+    <h1 class="Alamat"><b> di Asia Malang</b></h1>
+    <h3 >jl. suhat rembuksari 1 A lowokwaru Malang</h3>
+    <p><b>Lorem ipsum dolor sit amet consectetur adipisicing elit.</b> Necessitatibus magni, recusandae illo asperiores porro cumque distinctio fugit similique inventore magnam amet nulla quo, maxime quas mollitia, sit adipisci repudiandae vitae! Nihil saepe ratione illum molestias tempora minus vitae blanditiis veritatis corporis. Commodi temporibus facilis quaerat modi, odio ab voluptatum consectetur?</p>
+    <p id="satu">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime delectus quidem velit eligendi cupiditate illum, labore blanditiis. Iste unde saepe explicabo quaerat facilis aliquid autem, quasi animi. Nihil, reiciendis dolor?</p>
+    <p class="dua tiga" >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime delectus quidem velit eligendi cupiditate illum, labore blanditiis. Iste unde saepe explicabo quaerat facilis aliquid autem, quasi animi. Nihil, reiciendis dolor?</p>
+    <ul>
+        <li> satu </li>
+        <li><i>dua</i></li>
+    </ul>
+</body>
+</html>
